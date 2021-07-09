@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--    image action bar tab-->
+    <item
+        app:showAsAction="always"
+        android:title="add_image"
+        android:id="@+id/addImage"
+        android:icon="@drawable/ic_action_image"/>
+</menu>

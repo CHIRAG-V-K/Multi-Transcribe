@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MultiTranscribe</string>
+    <string name="speech_to_text">speech_to_text</string>
+    <string name="text_to_speech">text_to_speech</string>
+    <string name="type_here">type_here</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="read_pdf">read PDF</string>
+    <string name="press_mic_button_to_input_voice">press mic button to input voice</string>
+    <string name="extracted_text_displayed_here">Extracted text Displayed here...</string>
+    <string name="enter_page_numbers_to_read">Enter Page Numbers to Read</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="result">Result</string>
+    <string name="Press_mic_button_to_input_voice">Press_mic_button_to_input_voice</string>
+    <string name="logo">logo</string>
+    <string name="texttospeech">texttospeech</string>
+    <string name="text_to_speech1">Text-to-Speech</string>
+    <string name="speech_to_text1">Speech_to_Text</string>
+    <string name="pdf_to_speech">Pdf-to-Speech</string>
+    <string name="my_dashboard">My Dashboard</string>
+    <string name="_4_items">4 Items</string>
+    <string name="dashlogo">dashlogo</string>
+</resources>

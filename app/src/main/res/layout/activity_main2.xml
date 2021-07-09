@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#042b48"
+    tools:context=".MainActivity2">
+
+
+    <EditText
+        android:id="@+id/textEt"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:autofillHints="Type here..."
+        android:ems="10"
+        android:backgroundTint="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="@string/type_here"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/speakBtn"
+
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:drawableStart="@drawable/ic_speak"
+        android:drawableLeft="@drawable/ic_speak"
+        android:text="@string/start"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/stopBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:drawableStart="@drawable/ic_stop"
+        android:drawableLeft="@drawable/ic_stop"
+        android:drawablePadding="17dp"
+        android:text="@string/stop"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+
+</RelativeLayout>

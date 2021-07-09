@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#042b48"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+           android:layout_alignParentRight="true"
+            android:src="@drawable/dashlogo"
+            android:layout_marginTop="6dp"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:contentDescription="@string/logo"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_dashboard"
+            android:textSize="22sp"
+            android:layout_marginTop="6dp"
+            android:textColor="#FFFFFF"
+            tools:ignore="RelativeOverlap" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_items"
+            android:contentDescription="@string/dashlogo"
+            android:layout_below="@id/dashboard"
+            android:layout_marginTop="6dp"
+            android:textSize="14sp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="1"
+        android:background="#042b48"
+        android:columnOrderPreserved="false"
+        android:alignmentMode="alignMargins">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            tools:ignore="UnusedAttribute">
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="#042b48"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/ttsbtn"
+                    android:background="#042b48"
+                    android:src="@drawable/texttospeech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="12dp"
+
+
+                    android:text="Text-to-Speech"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            tools:ignore="UnusedAttribute">
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="#042b48"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/sttbtn"
+                    android:background="#042b48"
+                    android:src="@drawable/stt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="12dp"
+                    android:text="Speech_to_Text"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:background="#042b48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            tools:ignore="UnusedAttribute">
+
+            <LinearLayout
+                android:background="#042b48"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/rpbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pdftoaudio"
+                    android:background="#042b48"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="12dp"
+                    android:text="Pdf-to-Speech"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:background="#042b48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            tools:ignore="UnusedAttribute">
+
+            <LinearLayout
+                android:background="#042b48"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ittbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#042b48"
+                    android:src="@drawable/imagetotext"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="12dp"
+                    android:text="Image-to-Text"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </GridLayout>
+    </LinearLayout>
+
+</ScrollView>

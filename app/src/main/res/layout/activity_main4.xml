@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#042b48"
+    tools:context=".MainActivity4">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_alignParentRight="true"
+        android:focusable="true"
+        android:textColor="#ffffff"
+        tools:ignore="ContentDescription,RelativeOverlap" />
+
+    <EditText
+        android:id="@+id/output_text"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        app:backgroundTint="#ffffff"
+        android:textColor="#ffffff"
+        android:hint="@string/extracted_text_displayed_here"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textColorHint="#ffffff"
+
+        android:importantForAutofill="no"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/entries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/output_text"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:text="@string/enter_page_numbers_to_read"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/Num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entries"
+        android:layout_marginTop="12dp"
+        android:layout_alignEnd="@id/entries"
+        android:ems="10"
+        app:backgroundTint="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:inputType="number"
+        android:layout_alignRight="@id/entries"
+        tools:ignore="LabelFor"
+        android:autofillHints="1"/>
+
+    <Button
+        android:id="@+id/speakBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Num"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_speak"
+        android:drawableLeft="@drawable/ic_speak"
+        android:drawablePadding="12dp"
+        android:text="@string/start"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/stopBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Num"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_stop"
+        android:drawableLeft="@drawable/ic_stop"
+        android:drawablePadding="17dp"
+        android:text="@string/stop"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/filepath"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="15dp"
+        android:text=""
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp" />
+
+
+</RelativeLayout>
